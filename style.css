@@ -1,7 +1,36 @@
-@import url("./styles/index.css");
+ @import url("./styles/index.css");
 
-/* adınız -ticket numaranız -ticket isminiz start  */
+  /*Cemre Ozgules -NO-27 -Create the Site credits section start */
 
-/* css kodları buraya gelecek */
+  
+  footer {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-top: solid white;
+  margin-top: 50px;
+  font-size: 14px;
 
-/* adınız -ticket numaranız -ticket isminiz end  */
+}
+
+ footer p {
+  margin: 5px;
+  color: grey;
+
+ }
+ 
+  
+  footer div {
+    margin: 5px;
+    color: grey;
+  }
+
+  footer a {
+   color: blue;
+   text-decoration: none;
+   padding: 5px;
+  }
+
+
+/*Cemre Ozgules -NO-27 -Create the Site credits section end */
+
