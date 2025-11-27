@@ -6,37 +6,46 @@
     display: flex;
     max-width: 1440px;
     width: 100%;
-    max-height: 700px;
     height: 100%;
-    padding-right: 150px;
-    gap: 177px;
+    margin: auto;
+    justify-content: space-between;
 }
 
 .building-bridges-left-image {
     position: relative;
-    display: inline-block;
+    max-width: 702px;
+    width: 100%;
+}
+
+.images-building-bridges-big-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .images-building-bridges-point {
-    gap: 16px;
-    top: 416px;
-    left: 491px;
-    object-fit: contain;
     position: absolute;
+
+    width: clamp(90px, 28%, 229px); /* Min | Responsive | Max */
+
+    right: clamp(8px, 4%, 24px);
+    bottom: clamp(8px, 4%, 24px);
 }
 
 .building-bridges-right-header-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 32px;
+    max-width: 511px;
+    max-height: 700px;
+    gap: clamp(16px, 4vw, 32px);
 }
 
 .building-bridges-right-header-text h1 {
+    font-style: var(--primary-font);
     font-weight: var(--bold);
-    font-size: 60px;
-    line-height: 72px;
-    letter-spacing: -2%;
+    font-size: clamp(30px, 4vw, 60px);
+    line-height: clamp(32px, 4vw, 72px);
 }
 
 .header-grey-text {
@@ -44,10 +53,10 @@
 }
 
 .building-bridges-right-header-text p {
+    font-style: var(--primary-font);
     font-weight: var(--regular);
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0%;
+    font-size: clamp(14px, 4vw, 20px);
+    line-height: clamp(20px, 4vw, 30px);
 }
 
 .building-bridges-button {
@@ -55,10 +64,7 @@
     align-items: center;
     width: 205px;
     height: 64px;
-    padding-top: 16px;
-    padding-right: 16px;
-    padding-bottom: 16px;
-    padding-left: 24px;
+    padding: 16px 16px 16px 24px;
     gap: 25px;
     opacity: 1;
     border-radius: 55px;
@@ -75,7 +81,6 @@
     vertical-align: middle;
     width: 108px;
     height: 28px;
-    opacity: 1;
 }
 
 .images-building-bridges-vector {
@@ -85,6 +90,26 @@
     opacity: 1;
     border-radius: 100px;
     padding: 4px;
+}
+
+@media (max-width: 1023px) {
+    #building-bridges {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin: auto;
+        gap: 20px;
+        
+    }
+
+    .building-bridges-left-image {
+        margin: auto;
+    }
+
+    .building-bridges-right-header-text {
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 /* elif-No-13-Design-the-Building-Bridges-section end  */
