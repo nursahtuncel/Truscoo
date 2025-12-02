@@ -10,15 +10,14 @@
 
 
 footer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative; 
     background: white;
     padding: 15px;
     border-bottom: 1px solid grey;
     z-index: 1000;
 }
+
+
 
 .footer-container {
     display: flex;
