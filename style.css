@@ -1,18 +1,16 @@
 @import url("./styles/index.css");
 /* Ayşenur-NO-9 Implement the Video Section start */
 
-#video-section{
+.video-section{
     background-color:#043A53 ;
     color:white;
-    padding:100px 150px 0;
-    
+    padding:100px 150px 20px;   
 }
-.container{
+.video-section-container{
     max-width:1140px;
     margin: 0 auto;
-    
 }
-.section-header{
+.video-section-header{
     font-family:'Lato',sans-serif;
     display:flex;
     justify-content: space-between;
@@ -20,55 +18,59 @@
     gap:40px;
     margin-bottom: 64px;
 }
-.section-header h2{
+.video-section-header h2{
     font-weight: 700;
     font-size:60px;
     line-height: 72px;
     max-width: 520px;
 }
-.section-header h2 span{
+.video-section-header h2 span{
     color:#F2C94C;
-    white-space: nowrap; /* tek satırda tutması için*/
+    white-space: nowrap; 
 }
-.section-header p{
+.video-section-header p{
     font-size: 20px;
     line-height:30px;
     max-width: 380px;
 }
-.video-thumbnail{
-    display:block;
-    border-radius: 16px;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-width: 1130px;
-    margin: 0 auto;
+.ekip-video {
+  width: 100%;
+  max-width: 1130px;
+  aspect-ratio: 1130 / 754;
+  display: block;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
-.main-photo{
-    width: 100%;
-    display: block;
+@media (max-width: 1300px) {
+  .video-section-header {
+    flex-direction: column;
+  }
+  .video-section-header h2 span {
+    white-space: normal;
+  }
+  .video-section-header p{
+    max-width: 100%;
 }
-.play-button{
-    top:50%;
-    left:50%;
-    width: 90px;
-    height: 90px;
-    background-color:white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    position: absolute;
-    transform: translate(-50%,-50%);
 }
-.play-button:hover{
-    transform: translate(-50%, -50%) scale(1.1); /*butonun yerinden kaymaması için*/
+@media(max-width:768px){
+.video-section{
+    padding: 50px 20px 20px;
+}
 
+.video-section-header{
+    gap:30px;
+    margin-bottom: 30px;
 }
-.play-button img{
-    width: 30px;
-    height: auto;
+.video-section-header h2{
+    font-size: 30px;
+    line-height: 38px;
 }
+.video-section-header p{
+    font-size: 14px;
+    line-height: 20px;
+}
+}
+
 /* Ayşenur-NO-9 Implement the Video Section end */
