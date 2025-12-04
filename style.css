@@ -20,6 +20,8 @@ footer {
 
 
 .footer-container {
+    max-width: 1440 px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,10 +45,11 @@ footer {
 }
 
 .footer-center a:hover {
-    color: #007bff;
+    color: blue;
 }
 
 .footer-right p {
+    font-family: var(--primary-font,'Lato',sans-serif); 
     color: grey;
     font-size: 14px;
     margin: 0;
@@ -61,7 +64,8 @@ body {
 
 @media (max-width: 600px) {
     .footer-container {
-        flex-direction: column;
+        border: 1 px solid red;
+        columns: 2;
         gap: 10px;
     }
 }
