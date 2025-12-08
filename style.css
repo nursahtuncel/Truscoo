@@ -1,6 +1,80 @@
 @import url("./styles/index.css");
-/* Ayşenur-NO-9 Implement the Video Section start */
 
+
+
+  /*Cemre Ozgules -NO-27 -Create the Site credits section start */
+
+  
+ .footer-link {
+     margin: 0;
+    padding: 0;
+}
+
+
+footer {
+  
+    background: white;
+    padding: 15px;
+    border-top: 1px solid grey;
+
+}
+
+
+
+.footer-container {
+    max-width: 1440px;
+    padding: 24px 20px ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left p {
+    color: grey;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-center {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-center a {
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+}
+
+.footer-center a:hover {
+    color: blue;
+}
+
+.footer-right p {
+    font-family: var(--primary-font,'Lato',sans-serif); 
+    color: grey;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+
+/*Cemre Ozgules -NO-27 -Create the Site credits section end */
+
+/* Ayşenur-NO-9 Implement the Video Section start */
 .video-section{
     background-color:#043A53 ;
     color:white;
@@ -74,3 +148,4 @@
 }
 
 /* Ayşenur-NO-9 Implement the Video Section end */
+
