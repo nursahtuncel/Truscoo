@@ -1,6 +1,65 @@
 @import url("./styles/index.css");
 
 
+/* sila donmez No-5 trusted brands start */
+
+.client-brands {
+    width: 100%;
+    background-color: #FFFFFF;
+    
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    
+    padding: 50px 20px; 
+    box-sizing: border-box; 
+}
+
+.brand-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    /* font-style satırı gereksizdi, sildik */
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+
+.brand-logos {
+    display: flex;
+    align-items: center;
+    gap: 64px; 
+}
+
+.brand-logos img {
+    max-height: 30px; 
+    width: auto;
+}
+/* sila donmez NO-5 trusted brands end */
+
+/* sila donmez NO-6 responsiveness start */
+@media (max-width: 1080px) {
+    .client-brands {
+        flex-direction: column;
+        padding: 40px 24px;
+        height: auto;
+        gap: 32px;
+    }
+
+    .brand-logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 0;
+    }
+
+    .brand-text {
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+/* sila donmez NO-6 responsiveness end */
+
+
 
   /*Cemre Ozgules -NO-27 -Create the Site credits section start */
 
@@ -149,60 +208,4 @@ footer {
 
 /* Ayşenur-NO-9 Implement the Video Section end */
 
-/* sila donmez No-5 trusted brands start */
 
-.client-brands {
-    width: 100%;
-    background-color: #FFFFFF;
-    
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    
-    padding: 50px 150px; 
-    box-sizing: border-box; 
-}
-
-.brand-text {
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    /* font-style satırı gereksizdi, sildik */
-    line-height: 24px;
-    letter-spacing: 0%;
-}
-
-.brand-logos {
-    display: flex;
-    align-items: center;
-    gap: 64px; 
-}
-
-.brand-logos img {
-    max-height: 30px; 
-    width: auto;
-}
-/* sila donmez NO-5 trusted brands end */
-
-/* sila donmez NO-6 responsiveness start */
-@media (max-width: 768px) {
-    .client-brands {
-        flex-direction: column;
-        padding: 40px 24px;
-        height: auto;
-        gap: 32px;
-    }
-
-    .brand-logos {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 24px;
-        margin-top: 0;
-    }
-
-    .brand-text {
-        text-align: center;
-        margin-bottom: 0;
-    }
-}
-/* sila donmez NO-6 responsiveness end */
