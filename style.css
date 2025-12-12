@@ -547,3 +547,249 @@ footer {
 }
 
 /* elif-No-13-Design-the-Building-Bridges-section end  */
+/* Ayşenur Aygün Develop "Blogs (What's New)" Section start */
+#blogs{
+    padding: 100px 150px 150px 150px;
+    font-family:var(--primary-font);
+}
+
+.blogs-container{
+    max-width:1140px;
+    margin: 0 auto;
+}
+
+.blogs-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px; 
+}
+
+.blogs-header h2{
+    font-size: var(--font-4xl);
+    font-weight: var(--bold);
+    color: var(--midnight-black);
+}
+.blogs-header h2 span{
+    color: var(--deep-sea-blue);
+}
+
+.see-all{
+    font-size: var(--font-l);
+    font-weight: var(--bold);
+    text-decoration: none;
+    color:var(--midnight-black);
+    width: 95px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.blogs-cards{
+    display: flex;
+    gap:32px;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    
+}
+.blog-card{
+    width: 344px;
+    background: var(--canvas-white);
+    border:1px solid var(--soft-ivory);
+    border-radius:8px ;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.08); 
+    overflow: hidden;
+}
+.blog-card>img{
+    width: 100%;
+    height:257px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.blog-info{
+    padding:25px 24px 25px;
+    gap:16px;
+}
+
+.blog-meta{
+    font-size:var(--font-xxl);
+    margin-bottom: 10px;
+}
+.blog-date{
+    font-weight: var(--bold);
+    color:var(--pure-black);
+    font-size:var(--font-m);
+}
+.blog-author{
+    font-weight: var(--regular);
+    font-size:var(--font-m);
+    color:var(--slate-grey);
+}
+.blog-title{
+    font-size: var(--font-xxl) ;
+    font-weight: var(--bold);
+    margin-bottom:10px ;
+}
+.blog-text{
+    font-size:var(--font-l) ;
+    color: var(--slate-grey);
+    margin-bottom: 15px;
+    line-height: 28px;
+}
+.read-more{
+    font-size: var(--font-l);
+    font-weight:var(--bold) ;
+    color: var(--midnight-black);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap:16px;
+}
+.read-more-icon{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+
+
+@media (max-width:372px) {
+    #blogs{
+        padding: 50px 20px 50px 20px;
+    }
+    .blogs-container{
+        max-width:100%;
+    }
+    .blogs-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:16px;
+    }
+    .blogs-header h2 {
+        font-size: var(--font-3xl);
+        line-height: 38px;
+    }
+    .blogs-cards{
+        gap:32px;
+        overflow-x:auto;
+        flex-wrap:nowrap;
+        padding-bottom:10px ;
+        
+    }
+    .blog-card{
+        width: 344px;
+        max-width: 344px;
+        
+    }    
+    .blog-info{
+        padding: 16px;
+    }
+    .blog-title{
+        font-size:var(--font-l);
+    }
+    .blog-text{
+        font-size: var(--font-s);
+        line-height: 20px;
+        max-height: 60px;     
+        overflow: hidden;
+    }
+    .read-more{
+        font-size: var(--font-s);
+    }
+    .see-all{
+        margin:32px auto 0 auto;
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+    #blogs{
+    font-family: var(--primary-font);
+    }
+  .blogs-container{
+    max-width: 100%;
+  }
+
+  .blogs-cards{
+    flex-wrap: wrap;          
+    justify-content: center;  
+  }
+
+  .blog-card{
+    max-width: 320px;         
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  #blogs{
+    padding: 50px 20px 50px 20px;
+    position:relative;
+  }
+
+  .blogs-container{
+    max-width: 100%;
+  }
+  .blogs-header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .blogs-header h2{
+    font-size: var(--font-3xl);
+    line-height: 32px;
+  }
+  .blogs-cards{
+    display: flex;
+    flex-wrap: nowrap;          
+    overflow-x: auto;             
+    gap: 32px;                   
+    padding-bottom: 30px;
+    justify-content: flex-start;
+  }
+  .blog-card{
+    flex: 0 0 100%;             
+    max-width: 100%;
+  }
+  .blog-date{
+    font-size: var(--font-xs);
+  }
+  .blog-author{
+    font-size: var(--font-xs);
+  }
+  .blog-info{
+    padding: 16px;
+  }
+
+  .blog-title{
+    font-size: var(--font-l);
+    font-weight: var(--bold);
+  }
+
+  .blog-text{
+    font-size: var(--font-s);
+    line-height: 20px;
+    max-height: 66px;             
+    overflow: hidden;             
+  }
+  .read-more{
+     font-size: var(--font-s);
+  }
+  .see-all{
+    position: absolute;
+    bottom:16px;
+    left:50%;
+    transform: translateX(-50%);
+    margin:0;    
+  }
+}
+
+/* Ayşenur Aygün Develop "Blogs (What's New)" Section end */
