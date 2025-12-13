@@ -793,3 +793,54 @@ footer {
 }
 
 /* Ayşenur Aygün Develop "Blogs (What's New)" Section end */
+
+/* elif-No-15-Implement-the-Numbers-Section start  */
+.implement-numbers {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    text-align: center;
+    gap: 64px;
+    padding: 100px 150px;
+    margin: auto;
+}
+
+.implement-numbers div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 200px;
+    width: 100%;
+    margin: auto;
+}
+
+.implement-numbers h2 {
+    font-style: var(--primary-font);
+    color: var(--deep-sea-blue);
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: var(--bold);
+}
+
+.implement-numbers p {
+    font-style: var(--primary-font);
+    color: var(--slate-grey);
+    font-size: clamp(16px, 5vw, 24px);
+    font-weight: var(--bold);
+}
+
+@media (max-width: 1200px) {
+    .implement-numbers {
+        flex-wrap: wrap;
+        gap: 32px;
+        padding: 50px 20px;
+    }
+    .implement-numbers div {
+        gap: 8px;
+    }
+    .implement-numbers p {
+        font-weight: var(--medium);
+    }
+}
+/* elif-No-15-Implement-the-Numbers-Section end  */
