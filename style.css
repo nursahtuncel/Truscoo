@@ -946,3 +946,157 @@ body {
 }
 
 /* irem kırdök -NO-3 -Design the Hero Section end */
+
+
+/* sıla No-25 Implelent Footer Section Start */
+    
+.site-footer {
+    background-color: #fff;
+    width: 100%;
+    padding: 80px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.footer-content-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 40px;
+}
+
+.footer-brand-area {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.footer-logo-icon {
+    display: flex;
+    gap: 4px;
+}
+
+.f-bar {
+    height: 34px;
+    transform: skewX(-30deg);
+}
+
+.f-bar-1 {
+    width: 14px;
+    background-color: #CBD5E1;
+}
+
+.f-bar-2 {
+    width: 18px;
+    background-color: #94A3B8;
+}
+
+.f-bar-3 {
+    width: 22px;
+    background-color: #0A2540;
+}
+
+.footer-logo-text {
+    font-size: 32px;
+    font-weight: 800;
+    color: #0A2540;
+    letter-spacing: -0.5px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    background-color: #E6E8EC;
+    border-radius: 50%;
+    color: #888;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-social-icons a:hover {
+    background-color: #0A2540;
+    color: #fff;
+}
+
+.footer-desc-area {
+    flex: 2;
+    max-width: 400px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.footer-nav-area {
+    flex: 0.5;
+    min-width: 120px;
+}
+
+.footer-nav-area h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #0A2540;
+}
+
+.footer-nav-area ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav-area li {
+    margin-bottom: 12px;
+}
+
+.footer-nav-area a {
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.footer-nav-area a:hover {
+    color: #0A2540;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .footer-content-row {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-brand-area, 
+    .footer-desc-area, 
+    .footer-nav-area {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* sıla No-25 Implelent Footer Section End */
