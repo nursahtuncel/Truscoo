@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trusco</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- irem kırdök-Design the Hero Section start -->
-    <section>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Credits</title> 
+  <link rel="stylesheet" href="./style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <!-- Efe Ilgaz Köksal NO-7 Design the Header Section Start -->
+   <header class="Site-Header">
+
+        <div class="container-header">
+            <nav class="navbar">
+                <a href="#" class="logo"> <img src="./Photos/Photo-for-navbar/Logo.svg" alt="Logo"></a>
+               
+                <i id="hamburger-icon" class ="fa-solid fa-bars"></i>
+                <nav class="nav-collapse-menu" id="nav-menu">
+                    <ul class="nav-links">
+                        <li ><a href="#">Features</a></li>
+                        <li ><a href="#">Solutions</a></li>
+                        <li ><a href="#">Company</a></li>
+                        <li ><a href="#">Resources</a></li>
+                        <li ><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="buttons-for-header">
+                    <a href="#" class="btn btn-login"><img src="Photos/Photo-for-navbar/Login.svg" alt="Login"></a>
+                    <a href="#" class="btn btn-signup"><img src="Photos/Photo-for-navbar/Signup.svg" alt="Sign up"></a>
+                </div>
+                
+                </nav>
+            </nav>
+        </div>
+
+    </header>
+    <!-- Java Script for Hamburger Menu -->
+    <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+    const hamburgerButton=document.getElementById('hamburger-icon');
+    const  navMenu=document.getElementById('nav-menu');
+hamburgerButton.addEventListener('click',()=>{
+    navMenu.classList.toggle('is-active');
+
+    if (navMenu.classList.contains('is-active')) {
+                hamburgerButton.classList.remove('fa-bars');
+                hamburgerButton.classList.add('fa-xmark'); 
+            } else {
+                hamburgerButton.classList.remove('fa-xmark');
+                hamburgerButton.classList.add('fa-bars'); 
+            }
+    
+    });
+});  
+ </script>
+  <!-- Efe Ilgaz Köksal NO-7 Design the Header Section End-->
+   <!-- irem kırdök-Design the Hero Section start -->
+    <section class="hero">
       <div class="frame-three">
         <div class="right-place">
           <img src="images/Hero 5.svg" alt="Hero 5" />
@@ -42,5 +94,196 @@
       </div>
     </section>
     <!-- irem kırdök-Design the Hero Section end -->
-  </body>
+  
+
+<!--Sıla Dönmez - Create the Trusted Brands Section Start-->
+    <section class="client-brands">
+        <p class="brand-text">Trusted by the best in the world</p>
+        <div class="brand-logos">
+            <img src="images/Google.svg" alt="Google">
+            <img src="images/Atlassian.svg" alt="Atlassian">
+            <img src="images/Canon.svg" alt="Canon">
+            <img src="images/Walmart.svg" alt="Walmart">
+            <img src="images/Amazon.svg" alt="Amazon">
+        </div>
+    </section>
+<!--Sıla Dönmez - Create the Trusted Brands Section End-->
+
+
+
+  <!-- Ayşenur Aygün Implement the Video Section start-->
+  <section class="video-section">
+    <div class="video-section-container">
+      <div class="video-section-header">
+          <h2>
+            High-Level Sales 
+            <span>Teams & Professionals</span>
+          </h2>
+          <p>Circuit is flexible and affordable and offers you exceptional support to achieve your career goals. Circuit is a Global training provider based across the UK that specialises. </p>
+        </div>
+        <video class="ekip-video" controls loop poster="./images/video-photo.jpg" 
+        src="./images/ekip-calisma-videosu.mp4">
+        </video>
+      </div>
+  </section>
+  <!-- Ayşenur Aygün Implement the Video Section end-->
+
+<!--   Efe Ilgaz Köksal Implement the Benefits Section Start -->
+<section class="benefits">
+    <div class="benefit-container">
+        <div class="benefit-header">
+            <span class="benefit-badge">Beneficial</span>
+        <h2>Benefical Elements</h2>
+            <p>An awesome & poweful tools for your business, increase business revenue</p>
+        </div>
+        <div class="benefit-cards">
+            <div class="cards">
+                <div class="card-design">
+                    <img src="images/Beneficial-card-1.png" alt="Happy Customers Icon">
+            </div>
+            <h3>Happy Customers</h3>
+            <p>Productive agents are happy agents. Give them all the support tools and information they need to best serve your customers.</p>
+        </div>
+
+        <div class="cards">
+                <div class="card-design">
+                    <img src="images/Beneficial-card-2.png" alt="Best Integrations Icon">
+            </div>
+            <h3>Best Integrations</h3>
+                <p>Our software is powerful enough to handle the most complex business, yet flexible enough to scale with you as you grow.</p>
+            </div>
+  
+        <div class="cards">
+                <div class="card-design">
+                    <img src="images/Beneficial-card-3.png" alt="Grow Without Problems Icon">
+                                    </div>
+                <h3>Grow Without Problems</h3>
+                <p>with evaluating in depth variety of data sets and including the speed of tech adaptation we can build bridges between any companies and their customers.</p>
+
+        </div>
+    </div>
+
+</section>
+<!--   Efe Ilgaz Köksal Implement the Benefits Section End -->
+<!-- elif-No-15-Implement-the-Numbers-Section start -->
+<section class="implement-numbers">
+    <div class="number-one">
+        <h2>$65 M</h2>
+        <p>Generate sales</p>
+    </div>
+    <div class="number-two">
+        <h2>58%</h2>
+        <p>Grew revenue</p>
+    </div>
+    <div class="number-three">
+        <h2>12</h2>
+        <p>Countries</p>
+    </div>
+    <div class="number-four">
+        <h2>16k+</h2>
+        <p>Grew customers</p>
+    </div>
+</section>
+<!-- elif-No-15-Implement-the-Numbers-Section end -->
+<!-- elif-No-13-Design-the-Building-Bridges-section start -->
+        <section id="building-bridges">
+            <div class="building-bridges-left-image">
+                <img src="images/Building-Bridges-Image.svg" class="images-building-bridges-big-image" />
+                <img src="images/Building-Bridges-Point.svg" class="images-building-bridges-point" />
+            </div>
+            <div class="building-bridges-right-header-text">
+                <h1>Building bridges between <span class="header-grey-text">companies and customers</span></h1>
+                <p>
+                    with evaluating in depth variety of data sets and including the speed of tech adaptation we can
+                    build birdges between any companies and their customers.
+                </p>
+                <button class="building-bridges-button">
+                    <span class="building-bridges-button-text">View Reports</span
+                    ><img
+                        src="images/Building-Bridges-Vector.svg"
+                        class="images-Building-Bridges-vector"
+                        title="vector"
+                    />
+                </button>
+            </div>
+        </section>
+        <!--  elif-No-13-Design-the-Building-Bridges-section end -->
+   <!-- Ayşenur Aygün-Develop "Blogs (What's New)" Section start -->
+   <section id="blogs">
+    <div class="blogs-container">
+      <div class="blogs-header">
+        <h2>Whats new on <span>Trustco.</span> ?</h2>
+        <a href="#" class="see-all">See All 
+          <img src="./images/blog-arrow.png" alt="ok" class="read-more-icon">
+        </a>  
+      </div>
+      <div class="blogs-cards">
+        <div class="blog-card">
+          <img src="./images/blog-image1.png" alt="Blog image">
+          <div class="blog-info">
+            <p class="blog-meta">
+              <span class="blog-date">23 Nov 2022</span>
+              <span class="blog-author">, by Amanda Hugh</span>
+            </p> 
+            <h3 class="blog-title">What Makes an Authentic Employee Profile?</h3>
+            <p class="blog-text">I'm totally unconvinced that two people can find a person they haven't known previously...</p>
+            <a href="#" class="read-more">Read Story 
+              <img src="./images/blog-arrow.png" alt="ok" class="read-more-icon">
+            </a>      
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="./images/blog-image2.png" alt="Blog image" class="blog-main-image">
+          <div class="blog-info">
+            <p class="blog-meta">
+              <span class="blog-date">15 Nov 2022</span>
+              <span class="blog-author">, by Sofia Kent</span>
+            </p>
+            <h3 class="blog-title">Why Does It Matter to be Authentic Employee?</h3>
+            <p class="blog-text">I'm totally unconvinced that two people can find a person they haven't known previously...</p>
+            <a href="#" class="read-more">Read Story 
+              <img src="./images/blog-arrow.png" alt="ok" class="read-more-icon">
+            </a>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img src="./images/blog-image3.png" alt="Blog image">
+          <div class="blog-info">
+            <p class="blog-meta">
+              <span class="blog-date">23 Sep 2022</span>
+              <span class="blog-author">, by Jason Bone</span>
+            </p>
+            <h3 class="blog-title">What Makes an Authentic Employee Profile?</h3>
+            <p class="blog-text">I'm totally unconvinced that two people can find a person they haven't known previously...</p>
+            <a href="#" class="read-more">Read Story 
+              <img src="./images/blog-arrow.png" alt="ok" class="read-more-icon">
+            </a> 
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+  <!-- Ayşenur Aygün-Develop "Blogs (What's New)" Section end -->
+<!--Cemre Ozgules-Create the Site credits section start-->
+    
+        <div class="same footer-container">
+
+            <div class="same footer-left">
+                <p>©2022–2023 Trustco.</p>
+            </div>
+
+            <div class="same footer-center">
+                <p class="footer-link"><a href="terms.html">Terms of Service</a></p>
+                <p class="footer-link"><a href="privacy.html">Privacy Policy</a></p>
+                
+            </div>
+
+            <div class="same footer-right">
+                <p class="same">English ▼</p>
+            </div>
+
+        </div>
+
+</body>
 </html>
+   
