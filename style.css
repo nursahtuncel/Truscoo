@@ -202,6 +202,92 @@
 }
 /* sila donmez NO-6 responsiveness end */
 
+/* Efe Ilgaz Köksal Implement the benefits section No 11 start */
+.benefits{
+    background-color: #f9f9f9;
+    padding: 100px 20px;
+}
+
+.benefit-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+.benefit-header{
+    flex:1;
+    padding-top: 100px;
+}
+.benefit-badge{
+    display : inline-block;
+    background-color: #043A53;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: var(--primary-font,'Lato',sans-serif); 
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.benefit-header h2{
+font-family: var(--primary-font,'Lato',sans-serif);
+font-weight: 700;
+font-size: 60px;
+letter-spacing: 0.1px;
+margin-bottom: 20px;
+}
+.benefit-header p{
+    font-family: var(--primary-font,'Lato',sans-serif); 
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+.benefit-cards{
+    flex: 3;
+    display: flex;
+    gap: 30px;
+}
+.cards{
+    background: #F2F5F6;
+    padding: 40px;
+    border-radius: 16px;
+    flex: 1;
+}
+.card-design{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.cards h3{
+    font-family: var(--primary-font,'Lato',sans-serif);
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.cards p{
+    font-family: var(--primary-font,'Lato',sans-serif);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+@media(max-width:1000px){
+    .benefit-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .benefit-header{
+        padding-top: 0;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .benefit-cards{
+        flex-direction: column;
+    }
+   
+}
+/* Efe Ilgaz Köksal Implement the benefits section No 11 end */
 
   /*Cemre Ozgules -NO-27 -Create the Site credits section start */
 
@@ -354,6 +440,7 @@ footer {
 
 #building-bridges {
     display: flex;
+    flex-direction: row;
     max-width: 1440px;
     width: 100%;
     height: 100%;
@@ -461,6 +548,405 @@ footer {
 }
 
 /* elif-No-13-Design-the-Building-Bridges-section end  */
+/* Ayşenur Aygün Develop "Blogs (What's New)" Section start */
+#blogs{
+    padding: 100px 150px 150px 150px;
+    font-family:var(--primary-font);
+}
+
+.blogs-container{
+    max-width:1140px;
+    margin: 0 auto;
+}
+
+.blogs-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px; 
+}
+
+.blogs-header h2{
+    font-size: var(--font-4xl);
+    font-weight: var(--bold);
+    color: var(--midnight-black);
+}
+.blogs-header h2 span{
+    color: var(--deep-sea-blue);
+}
+
+.see-all{
+    font-size: var(--font-l);
+    font-weight: var(--bold);
+    text-decoration: none;
+    color:var(--midnight-black);
+    width: 95px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.blogs-cards{
+    display: flex;
+    gap:32px;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    
+}
+.blog-card{
+    width: 344px;
+    background: var(--canvas-white);
+    border:1px solid var(--soft-ivory);
+    border-radius:8px ;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.08); 
+    overflow: hidden;
+}
+.blog-card>img{
+    width: 100%;
+    height:257px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.blog-info{
+    padding:25px 24px 25px;
+    gap:16px;
+}
+
+.blog-meta{
+    font-size:var(--font-xxl);
+    margin-bottom: 10px;
+}
+.blog-date{
+    font-weight: var(--bold);
+    color:var(--pure-black);
+    font-size:var(--font-m);
+}
+.blog-author{
+    font-weight: var(--regular);
+    font-size:var(--font-m);
+    color:var(--slate-grey);
+}
+.blog-title{
+    font-size: var(--font-xxl) ;
+    font-weight: var(--bold);
+    margin-bottom:10px ;
+}
+.blog-text{
+    font-size:var(--font-l) ;
+    color: var(--slate-grey);
+    margin-bottom: 15px;
+    line-height: 28px;
+}
+.read-more{
+    font-size: var(--font-l);
+    font-weight:var(--bold) ;
+    color: var(--midnight-black);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap:16px;
+}
+.read-more-icon{
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+
+
+@media (max-width:372px) {
+    #blogs{
+        padding: 50px 20px 50px 20px;
+    }
+    .blogs-container{
+        max-width:100%;
+    }
+    .blogs-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:16px;
+    }
+    .blogs-header h2 {
+        font-size: var(--font-3xl);
+        line-height: 38px;
+    }
+    .blogs-cards{
+        gap:32px;
+        overflow-x:auto;
+        flex-wrap:nowrap;
+        padding-bottom:10px ;
+        
+    }
+    .blog-card{
+        width: 344px;
+        max-width: 344px;
+        
+    }    
+    .blog-info{
+        padding: 16px;
+    }
+    .blog-title{
+        font-size:var(--font-l);
+    }
+    .blog-text{
+        font-size: var(--font-s);
+        line-height: 20px;
+        max-height: 60px;     
+        overflow: hidden;
+    }
+    .read-more{
+        font-size: var(--font-s);
+    }
+    .see-all{
+        margin:32px auto 0 auto;
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+    #blogs{
+    font-family: var(--primary-font);
+    }
+  .blogs-container{
+    max-width: 100%;
+  }
+
+  .blogs-cards{
+    flex-wrap: wrap;          
+    justify-content: center;  
+  }
+
+  .blog-card{
+    max-width: 320px;         
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  #blogs{
+    padding: 50px 20px 50px 20px;
+    position:relative;
+  }
+
+  .blogs-container{
+    max-width: 100%;
+  }
+  .blogs-header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .blogs-header h2{
+    font-size: var(--font-3xl);
+    line-height: 32px;
+  }
+  .blogs-cards{
+    display: flex;
+    flex-wrap: nowrap;          
+    overflow-x: auto;             
+    gap: 32px;                   
+    padding-bottom: 30px;
+    justify-content: flex-start;
+  }
+  .blog-card{
+    flex: 0 0 100%;             
+    max-width: 100%;
+  }
+  .blog-date{
+    font-size: var(--font-xs);
+  }
+  .blog-author{
+    font-size: var(--font-xs);
+  }
+  .blog-info{
+    padding: 16px;
+  }
+
+  .blog-title{
+    font-size: var(--font-l);
+    font-weight: var(--bold);
+  }
+
+  .blog-text{
+    font-size: var(--font-s);
+    line-height: 20px;
+    max-height: 66px;             
+    overflow: hidden;             
+  }
+  .read-more{
+     font-size: var(--font-s);
+  }
+  .see-all{
+    position: absolute;
+    bottom:16px;
+    left:50%;
+    transform: translateX(-50%);
+    margin:0;    
+  }
+}
+
+/* Ayşenur Aygün Develop "Blogs (What's New)" Section end */
+
+/* elif-No-15-Implement-the-Numbers-Section start  */
+.implement-numbers {
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    text-align: center;
+    gap: 64px;
+    padding: 100px 150px;
+    margin: auto;
+}
+
+.implement-numbers div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 200px;
+    width: 100%;
+    margin: auto;
+}
+
+.implement-numbers h2 {
+    font-style: var(--primary-font);
+    color: var(--deep-sea-blue);
+    font-size: clamp(36px, 5vw, 60px);
+    font-weight: var(--bold);
+}
+
+.implement-numbers p {
+    font-style: var(--primary-font);
+    color: var(--slate-grey);
+    font-size: clamp(16px, 5vw, 24px);
+    font-weight: var(--bold);
+}
+
+@media (max-width: 1200px) {
+    .implement-numbers {
+        flex-wrap: wrap;
+        gap: 32px;
+        padding: 50px 20px;
+    }
+    .implement-numbers div {
+        gap: 8px;
+    }
+    .implement-numbers p {
+        font-weight: var(--medium);
+    }
+}
+/* elif-No-15-Implement-the-Numbers-Section end  */
+/* irem kırdök -NO-3 -Design the Hero Section start */
+
+body {
+  background-color: rgb(246, 246, 246);
+  margin: 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.frame-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding-top: 40px;
+}
+.right-place {
+  max-width: 300px;
+  width: 100%;
+}
+
+.left-place {
+  width: 300px;
+  max-width: 100%;
+}
+
+.frame-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  padding: 10px;
+  line-height: 1.2;
+  font-size: 36px;
+  color: black;
+  text-align: center;
+}
+
+.frame-two span {
+  color: rgb(1, 1, 86);
+}
+
+.frame-two-title {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.frame-one {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.title {
+  font-size: clamp(24px, 5vw, 50px);
+}
+
+.get-started {
+  background-color: #043a53;
+  color: white;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.play-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.check-video {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .left-place,
+  .right-place {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .frame-one {
+    flex-direction: column;
+  }
+}
+
+/* irem kırdök -NO-3 -Design the Hero Section end */
+
 
 /* sıla No-25 Implelent Footer Section Start */
     
