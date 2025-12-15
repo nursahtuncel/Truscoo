@@ -504,21 +504,22 @@ footer {
 }
 
 .f-bar {
-    width: 14px;
     height: 34px;
-    border-radius: 2px;
     transform: skewX(-30deg);
 }
 
 .f-bar-1 {
+    width: 14px;
     background-color: #CBD5E1;
 }
 
 .f-bar-2 {
+    width: 18px;
     background-color: #94A3B8;
 }
 
 .f-bar-3 {
+    width: 22px;
     background-color: #0A2540;
 }
 
