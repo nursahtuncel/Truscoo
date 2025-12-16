@@ -10,6 +10,53 @@
 </head>
 <body>
     
+<!-- Efe Ilgaz Köksal NO-7 Design the Header Section Start -->
+   <header class="Site-Header">
+
+        <div class="container-header">
+            <nav class="navbar">
+                <a href="#" class="logo"> <img src="./Photos/Photo-for-navbar/Logo.svg" alt="Logo"></a>
+               
+                <i id="hamburger-icon" class ="fa-solid fa-bars"></i>
+                <nav class="nav-collapse-menu" id="nav-menu">
+                    <ul class="nav-links">
+                        <li ><a href="#">Features</a></li>
+                        <li ><a href="#">Solutions</a></li>
+                        <li ><a href="#">Company</a></li>
+                        <li ><a href="#">Resources</a></li>
+                        <li ><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="buttons-for-header">
+                    <a href="#" class="btn btn-login"><img src="Photos/Photo-for-navbar/Login.svg" alt="Login"></a>
+                    <a href="#" class="btn btn-signup"><img src="Photos/Photo-for-navbar/Signup.svg" alt="Sign up"></a>
+                </div>
+                
+                </nav>
+            </nav>
+        </div>
+
+    </header>
+    <!-- Java Script for Hamburger Menu -->
+    <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+    const hamburgerButton=document.getElementById('hamburger-icon');
+    const  navMenu=document.getElementById('nav-menu');
+hamburgerButton.addEventListener('click',()=>{
+    navMenu.classList.toggle('is-active');
+
+    if (navMenu.classList.contains('is-active')) {
+                hamburgerButton.classList.remove('fa-bars');
+                hamburgerButton.classList.add('fa-xmark'); 
+            } else {
+                hamburgerButton.classList.remove('fa-xmark');
+                hamburgerButton.classList.add('fa-bars'); 
+            }
+    
+    });
+});  
+ </script>
+  <!-- Efe Ilgaz Köksal NO-7 Design the Header Section End-->
+
     <!-- Contact Page Start -->
     <main class="contact-main">
         
@@ -86,22 +133,80 @@
         
     </main>
     
-    <!-- Footer -->
-    <div class="same footer-container">
-        <div class="same footer-left">
-            <p>©2022-2023 Trustco.</p>
-        </div>
-        
-        <div class="same footer-center">
-            <p class="footer-link"><a href="terms.html">Terms of Service</a></p>
-            <p class="footer-link"><a href="privacy.html">Privacy Policy</a></p>
-        </div>
-        
-        <div class="same footer-right">
-            <p class="same">English ▼</p>
+<!--Sıla Dönmez - Implement The Footer Section Start-->
+       
+       <footer class="site-footer">
+    <div class="container">
+        <div class="footer-content-row">
+            
+            <div class="footer-column footer-brand-area">
+                <div class="footer-logo-wrapper">
+                    <div class="footer-logo-icon">
+                        <span class="f-bar f-bar-1"></span>
+                        <span class="f-bar f-bar-2"></span>
+                        <span class="f-bar f-bar-3"></span>
+                    </div>
+                    <span class="footer-logo-text">Trustco.</span>
+                </div>
+                
+                <div class="footer-social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column footer-desc-area">
+                <p>
+                    An awesome & powerful tools for your business, increase business revenue with evaluating in depth variety of data sets and including the speed of tech adaptation we can build bridges between any companies and their customers.
+                </p>
+            </div>
+
+            <div class="footer-column footer-nav-area">
+                <h4>Home</h4>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column footer-nav-area">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
         </div>
     </div>
+</footer>
+
+<!--Sıla Dönmez - Implement The Footer Section End-->
+
+<!--Cemre Ozgules-Create the Site credits section start-->
     
+        <div class="same footer-container">
+
+            <div class="same footer-left">
+                <p>©2022–2023 Trustco.</p>
+            </div>
+
+            <div class="same footer-center">
+                <p class="footer-link"><a href="terms.html">Terms of Service</a></p>
+                <p class="footer-link"><a href="privacy.html">Privacy Policy</a></p>
+                
+            </div>
+
+            <div class="same footer-right">
+                <p class="same">English ▼</p>
+            </div>
+
+        </div>
+
 </body>
 </html>
                 
