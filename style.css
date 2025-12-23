@@ -399,7 +399,7 @@ footer {
 
 .contact-icon {
     font-size: 3rem;
-    color: #007bff;
+    color: #043A53;
     margin-bottom: 20px;
 }
 
@@ -424,7 +424,7 @@ footer {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 40px;
-    color: grey;
+    color:#043A53;
 }
 
 .contact-form {
@@ -485,7 +485,7 @@ footer {
 }
 
 .submit-btn {
-    background: blue;
+    background: #043A53;
     color: white;
     padding: 15px 40px;
     border: none;
@@ -493,12 +493,12 @@ footer {
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: opacity 0.3s;
     width: 100%;
 }
 
 .submit-btn:hover {
-    background: blue;
+    opacity: 0.8;
 }
 
 /* Responsive */
@@ -745,6 +745,7 @@ footer {
 }
 .blogs-cards{
     display: flex;
+    justify-content: space-between;
     gap:32px;
     flex-wrap: nowrap;
     align-items: stretch;
@@ -1262,13 +1263,14 @@ body {
 .Esection{
   max-width: 1440px;
   margin: 0 auto;
-  padding: 100px clamp(18px, 8vw, 150px);
+  padding: 100px 20px;
 }
 
 
 .Estack{
   display: flex;
   flex-direction: column;
+
   gap: 64px;
 }
 
@@ -1300,6 +1302,7 @@ body {
 }
 
 .Ecards {
+      justify-content:space-between;
   display: flex;
   gap: 24px;
   overflow-x: auto;
@@ -1313,9 +1316,8 @@ body {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 22px;
-  flex: 0 0 auto;
   scroll-snap-align: center;
-   width: min(520px, 82vw);
+  flex: 1;
 }
 
 .quote-mark {
@@ -1360,6 +1362,12 @@ body {
     padding: 60px 18px;
   }
 
+.Ecards {
+    flex-direction: column;
+    gap:20px;
+    
+}
+
   .Eheader{
     justify-content: center;
     text-align: center;
@@ -1378,15 +1386,14 @@ body {
     display: inline-flex;
   }
 
-  .Ecard{
-    flex-basis: 82vw;
-  }
 
   .Estack{
     gap: 30px;
   }
 }
-
+footer{
+    border: none;
+}
 
 /* emirhan-NO-19-Create-the-Testimonial-Section End */
 
